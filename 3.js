@@ -2,7 +2,7 @@ let Tasks = [];
 
 let addTasks = (tasks)=>{
     Tasks.push(tasks);
-    console.log(task +"has been added to my Tasks" );
+    console.log(tasks +"has been added to my Tasks" );
     return Tasks.length;
 }
 
@@ -14,7 +14,7 @@ Tasks.forEach((element)=>{
 
 }
 
-let deleteTask = ()=>{
+let deleteTask = (task)=>{
     let index = Tasks.indexOf(task);
     if(index > -1){
         Tasks.splice(index,1);
@@ -33,8 +33,3 @@ deleteTask("Work");
 
 
 
-
-   // })
-
-   // d. let index = Tasks.indexOf(task)
-   // Tasks.splice(index,1);
